@@ -1,0 +1,5 @@
+test_search:
+  search1:
+    content: "xiaoming"
+  search2:
+    content: "xiaohong"
