@@ -3,7 +3,7 @@ import os
 
 
 def data_analyze(filename, data_key):
-    with open(".%sdata%s%s" % (os.sep, os.sep, filename), "r") as f:
+    with open("./data/" + filename, "r") as f:
         data = yaml.full_load(f)
         data_dict = data[data_key]
         arr = []

@@ -24,6 +24,7 @@ class TestSearch:
     MINOR = 'minor'     不严重
     TRIVIAL = 'trivial'  最不严重
     """
+
     @allure.severity(allure.severity_level.BLOCKER)
     @pytest.mark.parametrize("args", data_analyze("search_data.yaml", "test_search"))
     def test_search(self, args):
@@ -33,3 +34,6 @@ class TestSearch:
         self.page.search.page_input_key_word(args["content"])
         # 点击返回按钮
         self.page.search.page_click_back_btn()
+
+    def test_search01(self):
+        assert 0
